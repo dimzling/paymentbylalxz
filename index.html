@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pembayaran – Lalzxyz Market</title>
+  <style>
+    body { font-family: sans-serif; background: #f2f2f2; padding: 20px; text-align: center; }
+    .card { background: #fff; border-radius:12px; padding:30px; max-width:450px; margin:auto; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+    .logo { width:200px; margin-bottom:20px; }
+    .box { background:#fafafa; border-radius:10px; padding:15px; margin:15px 0; }
+    input { width:80%; padding:10px; font-size:16px; margin-top:5px; }
+    button { padding:8px 16px; margin-top:10px; border:none; background:#007bff; color:white; border-radius:5px; cursor:pointer; }
+    img.qris { width:100%; border-radius:8px; margin-top:15px; }
+    a { display:block; margin-top:20px; font-weight:bold; color:green; text-decoration:none; }
+    .footer { margin-top:30px; font-size:12px; color:gray; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="https://img1.pixhost.to/images/6939/618132965_skyzopedia.jpg" alt="Logo Lalzxyz Market">
+    <h2>Bayar ke Lalzxyz Market</h2>
+    <p>Pilih metode pembayaran:</p>
+    <div class="box"><p><b>DANA</b></p><input type="text" value="088291916809 A/N BILAL" id="dana" readonly><button onclick="copy('dana')">Salin Nomor</button></div>
+    <div class="box"><p><b>OVO</b></p><input type="text" value="088291916809 A/N BILAL" id="ovo" readonly><button onclick="copy('ovo')">Salin Nomor</button></div>
+    <div class="box"><p><b>GoPay</b></p><input type="text" value="088291916809 A/N BILAL" id="gopay" readonly><button onclick="copy('gopay')">Salin Nomor</button></div>
+    <div class="box"><p><b>Atau scan QRIS:</b></p><img class="qris" src="https://img1.pixhost.to/images/6937/618115129_skyzopedia.jpg" alt="QRIS FERI STORE"><p style="font-size:14px;">Scan pakai DANA / OVO / GoPay / ShopeePay</p></div>
+    <p>Setelah bayar, kirim bukti ke:</p>
+    <a href="https://wa.me/6288291916809" target="_blank">📩 WhatsApp Admin</a>
+    <div class="footer">© Lalzxyz Market</div>
+  </div>
+  <script>
+    function copy(id) {
+      var x = document.getElementById(id);
+      x.select(); x.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Nomor berhasil disalin: " + x.value);
+    }
+  </script>
+</body>
+</html>
